@@ -7,7 +7,7 @@ plugins {
 
 sonar {
     properties {
-        property("sonar.projectKey", "mohammed-uzair_sonar_multi_comment_test")
+        property("sonar.projectKey", "mohammed-uzair_sonar_multi_comment_test_flavour_1")
         property("sonar.organization", "mohammed-uzair")
         property("sonar.host.url", "https://sonarcloud.io")
     }
