@@ -18,31 +18,38 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    flavorDimensions += "version"
+    productFlavors {
+        create("demo") {
+            dimension = "version"
+            applicationIdSuffix = ".demo"
+            versionNameSuffix = "-demo"
+        }
+        create("full") {
+            dimension = "version"
+            applicationIdSuffix = ".full"
+            versionNameSuffix = "-full"
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
         jvmTarget = "1.8"
     }
 }
 
-sonar {
-    properties {
-        property("sonar.projectKey", "mohammed-uzair_sonar_multi_comment_test_flavour_1")
-        property("sonar.organization", "mohammed-uzair")
-        property("sonar.host.url", "https://sonarcloud.io")
-    }
-}
-
 dependencies {
-
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.9.0")
@@ -52,5 +59,5 @@ dependencies {
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
 
     // There is an issue while compiling the project, the fix was found here -> https://gist.github.com/danielcshn/7aa57155d766d46c043fde015f054d40
-    implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.0"))
+//    implementation(platform("org.jetbrains.kotlin:kotlin-bom:7.5"))
 }
