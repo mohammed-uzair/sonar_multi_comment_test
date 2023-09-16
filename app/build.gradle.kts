@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("org.sonarqube")
 }
 
 android {
@@ -29,6 +30,14 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
+    }
+}
+
+sonar {
+    properties {
+        property("sonar.projectKey", "mohammed-uzair_sonar_multi_comment_test_flavour_1")
+        property("sonar.organization", "mohammed-uzair")
+        property("sonar.host.url", "https://sonarcloud.io")
     }
 }
 
