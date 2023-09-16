@@ -49,14 +49,6 @@ android {
     }
 }
 
-sonar {
-    properties {
-        property("sonar.projectKey", "mohammed-uzair_sonar_multi_comment_test_flavour_1")
-        property("sonar.organization", "mohammed-uzair")
-        property("sonar.host.url", "https://sonarcloud.io")
-    }
-}
-//
 dependencies {
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")

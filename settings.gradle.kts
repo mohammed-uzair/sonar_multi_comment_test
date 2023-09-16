@@ -15,4 +15,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "Sonar multi comment test"
 include(":app")
- 
