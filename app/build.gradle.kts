@@ -56,7 +56,7 @@ sonar {
         property("sonar.host.url", "https://sonarcloud.io")
     }
 }
-
+//
 dependencies {
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
@@ -67,5 +67,5 @@ dependencies {
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
 
     // There is an issue while compiling the project, the fix was found here -> https://gist.github.com/danielcshn/7aa57155d766d46c043fde015f054d40
-    implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.0"))
+//    implementation(platform("org.jetbrains.kotlin:kotlin-bom:7.5"))
 }
