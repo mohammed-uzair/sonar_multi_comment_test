@@ -20,4 +20,4 @@ sonar {
 //            property("sonar.tests", "src/testDemo")
 //        }
 //    }
-}
+//}
