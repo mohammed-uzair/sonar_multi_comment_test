@@ -12,14 +12,12 @@ sonar {
     }
 }
 
-subprojects {
-    version = "1.0"
-    sonarqube {
-        androidVariant "free"
-
-        properties {
-            property("sonar.sources", "src/main")
-            property("sonar.tests", "src/testDemo")
-        }
-    }
+//subprojects {
+//    version = "1.0"
+//    sonarqube {
+//        properties {
+//            property("sonar.sources", "src/main")
+//            property("sonar.tests", "src/testDemo")
+//        }
+//    }
 }
